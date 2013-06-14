@@ -10,7 +10,8 @@ require.config({
         'text': 'libs/text.min',
         'templates': '../templates',
         'bootstrapTransition': 'libs/bootstrap/bootstrap-transition.min',
-        'bootstrapModal': 'libs/bootstrap/bootstrap-modal.min',        
+        'bootstrapModal': 'libs/bootstrap/bootstrap-modal.min',  
+        'iScroll': 'libs/iscroll.min',
     },
     //Configure the dependencies and exports for older,
     //traditional "browser globals" scripts that do not use define()
@@ -19,12 +20,14 @@ require.config({
         'Backbone': ['Underscore', 'jQuery'],
         'bootstrapTransition': ['jQuery'],
         'bootstrapModal': ['jQuery'],
-        'app': ['Backbone', 'bootstrapTransition', 'bootstrapModal']
+        'iScroll': ['jQuery'],
+        'app': ['Backbone', 'bootstrapTransition', 'bootstrapModal', 'iScroll']
     }
 });
 
 // Load our app module and pass it to our definition function
 require(['app'], function(App){
+
     // The "app" dependency is passed in as "App"
     App.initialize();
 });

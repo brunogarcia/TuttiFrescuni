@@ -7,14 +7,21 @@ define([
     'views/productDetails'],                //View Product Detail 
     function(TitlesTemplate, ProductView, ProductDetailsView) {
 
-        var SeasonListView = Backbone.View.extend({
+        var SeasonListView,
+            productsScroll,
+            maxProducts,
+            productsHeight,
+            totalFruits,
+            totalVegetables;
+
+        SeasonListView = Backbone.View.extend({
 
             tagName: "div",
             className: "products",
 
             events: {
                 //If more info link has been activated
-                "click .more-info" : "moreInfo"
+                "click .product-details-modal" : "productDetailsModal"
             },            
 
             render:function () {
@@ -33,10 +40,11 @@ define([
                     this.category = {model: products.attributes.idCategory};
 
                     //append it on her own category's container
-                    if (this.category.model === "2")
+                    if (this.category.model === "2") {
                         $(this.el).find("#fruits > ul").append(new ProductView({model: products}).render().el);
-                    else
+                    } else {
                         $(this.el).find("#vegetables > ul").append(new ProductView({model: products}).render().el);
+                    }
 
 
                 }, this); //in this context
@@ -45,7 +53,7 @@ define([
             },
 
             //Launch modal with more info about the product
-            moreInfo: function (e) {
+            productDetailsModal: function (e) {
 
                 //Prevent trigger the default event
                 e.preventDefault();
@@ -63,9 +71,33 @@ define([
                         $('#details').html(new ProductDetailsView({model: this.model.models[i]}).render().el);
                     } 
                 }                
+            },
+
+            postRender: function() {
+
+                setTimeout(function () {
+
+                    //calculate values
+                    totalFruits = $('#fruits > .productTotal').height();
+                    totalVegetables = $('#vegetables > .productTotal').height();
+
+                    //compare values
+                    maxProducts = (totalFruits > totalVegetables) ? totalFruits : totalVegetables;
+
+                    //set product height
+                    productsHeight = maxProducts + 100;
+
+                    //apply height to scroller
+                    $('#productsScroller').height(productsHeight);
+
+                    //create scroll
+                    productsScroll = new iScroll('wrapper');
+
+                    }, 1000);
             }
 
         });
+
 
         // Our module now returns our view
         return SeasonListView;

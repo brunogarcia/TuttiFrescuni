@@ -1,0 +1,538 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"product",
+				"productDetail"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"produc",
+				"productDetails"
+			],
+			[
+				"g",
+				"getProduct"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ba",
+				"background-position"
+			],
+			[
+				"mart",
+				"margin-bottom"
+			],
+			[
+				"iframe",
+				"iframe_vimeo"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"ap",
+				"appgree"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"lis",
+				"list-style-type"
+			],
+			[
+				"sp",
+				"span"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 35.0,
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: List Packages"
+			],
+			[
+				"pac",
+				"Package Control: List Packages"
+			],
+			[
+				"oack",
+				"Package Control: Remove Package"
+			],
+			[
+				"Pack",
+				"Package Control: List Packages"
+			],
+			[
+				"Pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Pack	",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": false,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Usuario/Desktop/Appgree/modal.js",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/router.js",
+		"/C/wamp/www/tutti/js/router.js",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/wamp/www/tutti/js/collections/products.js",
+		"/C/wamp/www/tutti/index.html",
+		"/C/wamp/www/tutti/templates/header.html",
+		"/C/wamp/www/tutti/js/boot.js",
+		"/C/wamp/www/tutti/js/app.js",
+		"/C/wamp/www/tutti/templates/footer.html",
+		"/C/wamp/www/tutti/js/views/productsList.js",
+		"/C/wamp/www/tutti/js/views/productDetails.js",
+		"/C/wamp/www/tutti/js/views/product.js",
+		"/C/wamp/www/tutti/js/views/header.js",
+		"/C/wamp/www/tutti/api/tutti.php",
+		"/C/Users/Usuario/Dropbox/Proyecto SEIM/mysql/Tutti Backup 5-05-2013.sql",
+		"/C/Users/Usuario/Dropbox/Proyecto SEIM/Web/api/readme.md",
+		"/C/wamp/www/tutti/assets/styles/tutti.less",
+		"/C/wamp/www/tutti/templates/product-details.html",
+		"/C/wamp/www/tutti/templates/product.html",
+		"/C/wamp/www/tutti/templates/products-list.html",
+		"/C/wamp/www/tutti/web/templates/products-list.html",
+		"/C/wamp/www/tutti/web/js/views/productsList.js",
+		"/C/wamp/www/tutti/web/templates/header.html",
+		"/C/wamp/www/tutti/web/assets/styles/tutti.less",
+		"/C/wamp/www/tutti/web/assets/styles/bootstrap.less",
+		"/C/wamp/www/tutti/web/templates/product-details.html",
+		"/C/wamp/www/tutti/web/js/views/productDetails.js",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/mysql/00- create tables.sql",
+		"/C/Users/Usuario/Downloads/tutti.sql",
+		"/C/wamp/www/tutti/web/index.html",
+		"/C/wamp/www/tutti/web/assets/styles/tutti.css",
+		"/C/wamp/www/tutti/web/js/router.js",
+		"/C/wamp/www/tutti/web/js/collections/products.js",
+		"/C/wamp/www/tutti/web/js/models/product.js",
+		"/C/wamp/www/tutti/web/js/views/product.js",
+		"/C/wamp/www/tutti/web/js/views/footer.js",
+		"/C/wamp/www/tutti/web/js/views/header.js",
+		"/C/wamp/www/tutti/web/templates/product.html",
+		"/C/wamp/www/tutti/web/js/boot.js",
+		"/C/wamp/www/tutti/web/js/app.js",
+		"/C/wamp/www/tutti/web/js/libs/backbone.js",
+		"/C/wamp/www/tutti/web/js/libs/backbone.min.js",
+		"/C/wamp/www/tutti/web/js/libs/require.min.js",
+		"/C/wamp/www/tutti/web/js/libs/require.js",
+		"/C/wamp/www/tutti/web/js/libs/text.js",
+		"/C/wamp/www/tutti/web/js/libs/text.min.js",
+		"/C/wamp/www/tutti/web/js/libs/underscore.min.js",
+		"/C/wamp/www/tutti/web/js/views/headerView.js",
+		"/C/wamp/www/tutti/web/templates/product-item.html",
+		"/C/wamp/www/tutti/web/js/collections/seasons.js",
+		"/C/wamp/www/tutti/web/js/views/seasonListView.js",
+		"/C/wamp/www/tutti/web/js/models/season.js",
+		"/C/wamp/www/tutti/web/js/views/seasonItem.js",
+		"/C/wamp/www/tutti/web/js/collections/productDetail.js",
+		"/C/wamp/www/tutti/web/js/models/productDetail.js",
+		"/C/wamp/www/tutti/web/templates/products.html",
+		"/C/wamp/www/tutti/web/js/views/productItem.js",
+		"/C/Users/Usuario/Desktop/spin.js/dw.ui.loading-v2.js",
+		"/C/wamp/www/tutti/web/js/collections/productDetails.js",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/node/public/js/views/productView.js",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/node/public/js/router.js",
+		"/C/wamp/www/tutti/web/js/views/productView.js",
+		"/C/wamp/www/tutti/web/templates/footer.html",
+		"/C/wamp/www/tutti/web/templates/titleH1.html",
+		"/C/wamp/www/tutti/web/js/views/footerView.js",
+		"/C/wamp/www/appgree/index.html",
+		"/C/wamp/www/tutti/web/templates/productItem.html",
+		"/C/wamp/www/tutti/web/assets/styles/style.less",
+		"/C/wamp/www/appgree/css/appgree.less",
+		"/C/wamp/www/tutti/apirest/.htaccess",
+		"/C/wamp/www/tutti/api/_.htaccess",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/node/public/index.html",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/node/app.js",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/mysql/09- querys.sql",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/mysql/08- insert temporadas.sql",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/mysql/07- insert producto.sql",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/mysql/06- insert recogida.sql",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/mysql/05- insert meses.sql",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/mysql/04- insert categorias.sql",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/mysql/03- insert fotos.sql",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/mysql/02- insert literales.sql",
+		"/C/Users/Usuario/Dropbox/Tutti Frescuni/mysql/01- insert traducciones.sql",
+		"/C/wamp/www/appgree/tutorial130425/paso9.html",
+		"/C/wamp/www/appgree/tutorial130425/paso8.html",
+		"/C/wamp/www/appgree/tutorial130425/paso20.html",
+		"/C/wamp/www/appgree/tutorial130425/paso1.html",
+		"/C/wamp/www/appgree/tutorial130425/paso10.html",
+		"/C/wamp/www/appgree/tutorial130425/paso11.html",
+		"/C/wamp/www/appgree/tutorial130425/paso12.html",
+		"/C/wamp/www/appgree/tutorial130425/paso14.html",
+		"/C/wamp/www/appgree/tutorial130425/paso17.html",
+		"/C/wamp/www/appgree/tutorial130425/paso18.html",
+		"/C/wamp/www/appgree/tutorial130425/paso19.html",
+		"/C/wamp/www/appgree/tutorial130425/paso2-0.html",
+		"/C/wamp/www/appgree/tutorial130425/paso2-1.html",
+		"/C/wamp/www/appgree/tutorial130425/paso2.html",
+		"/C/wamp/www/appgree/tutorial130425/paso3.html",
+		"/C/wamp/www/appgree/tutorial130425/paso4.html",
+		"/C/wamp/www/appgree/tutorial130425/paso5.html",
+		"/C/wamp/www/appgree/tutorial130425/paso6.html",
+		"/C/wamp/www/appgree/tutorial130425/paso7.html",
+		"/C/wamp/www/appgree/tutorial130425/files/tutorial.css",
+		"/C/wamp/www/appgree/tutorial130425/paso22.html",
+		"/C/wamp/www/appgree/tutorial130425/close.html",
+		"/C/wamp/www/appgree/tutorial130425/paso0.html",
+		"/C/wamp/www/appgree/Responsive-Design-Testing/responsive.js",
+		"/C/Users/Usuario/Desktop/spin.js/dw.ui.loading.js",
+		"/C/Users/Usuario/Desktop/spin.js/spin.html",
+		"/C/Users/Usuario/Downloads/spin.js/spin.html",
+		"/C/Users/Usuario/Downloads/spin.js/dw.ui.loading-v2.js",
+		"/C/Users/Usuario/Downloads/spin.js/dw.ui.loading.js",
+		"/C/Users/Usuario/Downloads/spin.js/jquery.spin.js",
+		"/C/Users/Usuario/Downloads/spin.js/spin.js",
+		"/C/Users/Usuario/Downloads/spin.js/jquery.spin.min.js",
+		"/C/Users/Usuario/workspace/DemoWheel/src/main/webapp/js/jquery/jquery.autosize-min.js",
+		"/C/Users/Usuario/workspace/DemoWheel/src/main/webapp/js/jquery/jquery.cookie.js",
+		"/C/Users/Usuario/workspace/DemoWheel/src/main/webapp/js/jquery/jquery.dotdotdot-1.5.2-packed.js",
+		"/C/Users/Usuario/workspace/DemoWheel/src/main/webapp/js/jquery/jquery.i18n.properties-min-1.0.9.js",
+		"/C/Users/Usuario/workspace/DemoWheel/src/main/webapp/js/jquery/jquery.placeholder.min.js",
+		"/C/Users/Usuario/workspace/DemoWheel/src/main/webapp/js/jquery/jquery.prettyPhoto.js",
+		"/C/Users/Usuario/workspace/DemoWheel/src/main/webapp/js/jquery/jquery.simplemodal.js",
+		"/C/Users/Usuario/workspace/DemoWheel/src/main/webapp/js/jquery/jquery-1.8.3.min.js",
+		"/C/Users/Usuario/Downloads/spin.js/spin.min.js",
+		"/C/Users/Usuario/Downloads/spin.js/spin.css",
+		"/C/Users/Usuario/Downloads/test/preloader_JS.html",
+		"/C/Users/Usuario/Downloads/test/preloader_canvas.html",
+		"/C/Users/Usuario/Downloads/test/canvas.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\wamp\\www\\appgree\\tutorial130425"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"en",
+			"bag",
+			"seasonList",
+			"ViewProductDetails",
+			"ViewSeasonItem",
+			"TemplateTitle",
+			"SeasonListView",
+			"FlickSizeLong500",
+			">",
+			"close",
+			"<div class=\"cerrar\"><strong>x</strong></div>",
+			"cerrar",
+			"<!--div class=\"cerrar\"><strong>x</strong></div-->",
+			"http://192.168.5.193:8080/demowheel/images/icons/favicon.ico",
+			"david",
+			"pepa",
+			"71%",
+			"<div class=\"cerrar\"><strong>x</strong></div>",
+			"valoraci",
+			"fillingPanel",
+			"ill",
+			"71%",
+			"353",
+			"163",
+			"statusZone",
+			"votonook.png",
+			"nueva propu",
+			"propuesta",
+			"important",
+			"140",
+			"Archivo",
+			"number",
+			"bg-llaves",
+			"height",
+			", ",
+			"text-size-82",
+			"margin-top:0;",
+			"margin-top: 0;",
+			"@media",
+			";\n",
+			"link_href",
+			"left",
+			"modal-links",
+			"myModal",
+			"container",
+			"Media",
+			"icon_",
+			"offset6",
+			"class=\"zone",
+			"responsive",
+			".appgree ",
+			"@import \"",
+			"right",
+			".btn-info",
+			"btn-info"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"productsList",
+			"ProductDetailsView",
+			"ProductView",
+			"TitlesTemplate",
+			"ProductListView",
+			"<a href=\"close.html\" class=\"cerrar\" style=\"color: #fff !important; text-decoration: none !important; display:block\">x</a>",
+			"<div class=\"cerrar\"><strong>x</strong></div>",
+			"http://www.appgree.com/favicon.ico",
+			"<!--div class=\"cerrar\"><strong>x</strong></div-->",
+			"clicked_href",
+			"icon-",
+			"class=\"bg",
+			"",
+			"@import \"../bootstrap/less/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"paso18",
+				"tutorial130425/paso18.html"
+			],
+			[
+				"paso22",
+				"tutorial130425/paso22.html"
+			],
+			[
+				"paso4",
+				"tutorial130425/paso4.html"
+			],
+			[
+				"paso5",
+				"tutorial130425/paso5.html"
+			],
+			[
+				"paso6",
+				"tutorial130425/paso6.html"
+			],
+			[
+				"paso17",
+				"tutorial130425/paso17.html"
+			],
+			[
+				"paso14",
+				"tutorial130425/paso14.html"
+			],
+			[
+				"paso12",
+				"tutorial130425/paso12.html"
+			],
+			[
+				"paso11",
+				"tutorial130425/paso11.html"
+			],
+			[
+				"paso10",
+				"tutorial130425/paso10.html"
+			],
+			[
+				"paso9",
+				"tutorial130425/paso9.html"
+			],
+			[
+				"paso8",
+				"tutorial130425/paso8.html"
+			],
+			[
+				"paso7",
+				"tutorial130425/paso7.html"
+			],
+			[
+				"paso3",
+				"tutorial130425/paso3.html"
+			],
+			[
+				"boot",
+				"css/bootstrap.less"
+			],
+			[
+				"app",
+				"js/appgree.js"
+			],
+			[
+				"index",
+				"Responsive-Design-Testing/index.html"
+			],
+			[
+				"repos",
+				"bootstrap/less/responsive.less"
+			],
+			[
+				"elemn",
+				"css/elements/elements.less"
+			],
+			[
+				"elem",
+				"css/elements/elements.less"
+			],
+			[
+				"appgre",
+				"css/appgree.css"
+			],
+			[
+				"appgree",
+				"css/appgree.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 144.0,
+	"status_bar_visible": true
+}

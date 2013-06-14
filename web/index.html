@@ -4,37 +4,53 @@
     <title>Tutti Frescuni</title>
     <meta name="description" content="Disfruta sólo de lo mejores productos de temporada. ¡Con mejor sabor y más baratos!">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">        
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
 
-    <!--Render mobile sites more consistently on screens of different sizes and resolutions -->
+    <!--Fonts-->
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Cabin" rel="stylesheet" type="text/css">    
+
+    <!--Render mobile sites more consistently on 
+        screens of different sizes and resolutions -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--General CSS styles-->
 	<link rel="stylesheet" href="assets/styles/tutti.css" />    
 
     <!--Google Analytics-->
+
 </head>
 
 <body>
-
+    
 	<div class="tutti-frescuni">
+        <div id="loading"></div>
 
 		<div id="header"></div>
  
-		<div class="container">
-			<div class="row">
-				<div id="content"></div>
-			</div>
-		</div>
+        <div id="wrapper">
+            <div id="productsScroller">
+        		<div class="container">
+        			<div class="row">
+        				<div id="content"></div>
+        			</div>
+        		</div>
+            </div>
+        </div>
 
 		<div id="footer"></div>
 
 		<div id="details"></div>
+        <div id="credits"></div>
 
 	</div>
 
+    <!--Library Spin.js-->
+    <script type="text/javascript" src="js/libs/spin.min.js"></script>
+    <script type="text/javascript" src="js/libs/spin.config.js"></script>
+
     <!--This sets the baseUrl to the "scripts" directory, and
-        loads a script that will have a module ID of 'boot
+        loads a script that will have a module ID of 'boot'
         http://requirejs.org/docs/api.html
       -->
     <script data-main="js/boot" type="text/javascript" src="js/libs/require.js"></script>

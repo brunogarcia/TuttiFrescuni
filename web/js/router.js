@@ -1,6 +1,5 @@
-// Router
-// The routes object contains a list of patterns being watched by the router,
-// and which function to execute when a match is made.
+// Backbone.Router provides methods for routing client-side pages, 
+// and connecting them to actions and events.
 define([
     'collections/products',
     'views/header',
@@ -9,7 +8,10 @@ define([
     function(ProductsCollection, HeaderView, ProductListView, FooterView) {
 
         var AppRouter,
-            initialize;
+            app_router,
+            initialize,
+            self,
+            productsListView;
     
         // Create Router
         AppRouter = Backbone.Router.extend({
@@ -28,28 +30,62 @@ define([
                 //create a new Collection
                 this.productsList = new ProductsCollection();
 
+                //alphabeticical sorting by Name Product
+                this.productsList.comparator = function(product) {
+                    return product.get("nameProduct");
+                }
+
                 //avoid losing binding
-                var self = this;
+                self = this;
 
                 //fetch data Collection
                 this.productsList.fetch({
                     success:function () {
-                        //create Products List View and add them to #content
-                        $('#content').html(new ProductListView({model: self.productsList}).render().el);
+
+                         //create Products List View
+                        productsListView = new ProductListView({model: self.productsList});
+
+                        //add Products List View to #content
+                        $('#content').html(productsListView.render().el);
+
+                     if(productsListView.postRender) {
+                            productsListView.postRender();
+                        };                        
                     }
                 });
+
+
+
+
+
             }
 
         });
 
         initialize = function() {
-            var app_router = new AppRouter;
+            app_router = new AppRouter;
+
+            /* When all of your Routers have been created, 
+                and all of the routes are set up properly, 
+                call Backbone.history.start() to begin monitoring hashchange events, 
+                and dispatching routes.
+            */
             Backbone.history.start();
+
+            // Remove spinner
+            loading_spinner.stop();
+
+            // Hide loading
+            $("#loading").hide('slow'); 
+
+            
         };
 
         return {
-            initialize: initialize
+            initialize: initialize            
         };
+
+
 
     });
 

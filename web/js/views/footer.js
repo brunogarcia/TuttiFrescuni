@@ -6,7 +6,12 @@ define([
         var FooterView = Backbone.View.extend({
 
             tagName: "div",
-            className: "container",            
+            className: "container",       
+
+            events: {
+                //If more info link has been activated
+                "click .show-credits" : "showCredits"
+            },                   
 
             initialize:function () {
                 this.render();
@@ -16,6 +21,10 @@ define([
                 var footerTemplate = _.template(FooterTemplate);
                 $(this.el).html(footerTemplate);
                 return this;
+            },
+
+            showCredits: function() {
+                
             }
         });
 
