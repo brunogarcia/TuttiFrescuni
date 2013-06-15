@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"cur",
+				"cursor"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"pro",
+				"productsListView"
+			],
+			[
+				"product",
+				"productsList"
+			],
+			[
 				"he",
 				"height"
 			],
@@ -26,14 +42,6 @@
 			[
 				"mar",
 				"margin-bottom"
-			],
-			[
-				"product",
-				"productDetail"
-			],
-			[
-				"tex",
-				"text-align"
 			],
 			[
 				"produc",
@@ -111,7 +119,7 @@
 			"file": "js/router.js",
 			"settings":
 			{
-				"buffer_size": 2373,
+				"buffer_size": 2473,
 				"line_ending": "Windows"
 			}
 		}
@@ -164,21 +172,26 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/boot.js",
-		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/app.js",
-		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/templates/header.html",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/assets/styles/tutti.less",
-		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/views/productsList.js",
-		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/router.js",
-		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/index.html",
-		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/spin.config.js",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/views/productDetails.js",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/views/productsList.js",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/index.html",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/views/footer.js",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/templates/footer.html",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/templates/product.html",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/templates/product-details.html",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/router.js",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/templates/products-list.html",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/templates/header.html",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/app.js",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/assets/styles/tutti.css",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/boot.js",
+		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/spin.config.js",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/libs/iscroll.js",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/libs/spin.min.js",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/loading.js",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/views/product.js",
 		"/C/Users/Usuario/Desktop/Appgree Mantis/1639.txt",
-		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/assets/styles/tutti.css",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/views/header.js",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/collections/products.js",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/libs/text.js",
@@ -194,7 +207,6 @@
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/templates/months-and-seasons.html",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/models/months-and-seasons.js",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/api/tutti.php",
-		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/templates/product-details.html",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/js/models/product.js",
 		"/C/Users/Usuario/Documents/GitHub/TuttiFrescuni/web/templates/matrix-seasons-months",
 		"/C/Users/Usuario/Desktop/Appgree/modal.js",
@@ -287,11 +299,7 @@
 		"/C/wamp/www/appgree/tutorial130425/paso11.html",
 		"/C/wamp/www/appgree/tutorial130425/paso12.html",
 		"/C/wamp/www/appgree/tutorial130425/paso14.html",
-		"/C/wamp/www/appgree/tutorial130425/paso17.html",
-		"/C/wamp/www/appgree/tutorial130425/paso18.html",
-		"/C/wamp/www/appgree/tutorial130425/paso19.html",
-		"/C/wamp/www/appgree/tutorial130425/paso2-0.html",
-		"/C/wamp/www/appgree/tutorial130425/paso2-1.html"
+		"/C/wamp/www/appgree/tutorial130425/paso17.html"
 	],
 	"find":
 	{
@@ -310,6 +318,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"totalFruits",
+			"productsHeight",
+			"maxProducts",
+			"totalScrollHeight",
 			"spinner",
 			"dust-full-1.2.3.min.js",
 			"window.jQuery",
@@ -408,15 +420,15 @@
 					"file": "js/router.js",
 					"settings":
 					{
-						"buffer_size": 2373,
+						"buffer_size": 2473,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1523,
-								1523
+								1816,
+								1816
 							]
 						],
 						"settings":
@@ -426,7 +438,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 315.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
