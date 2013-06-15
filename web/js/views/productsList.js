@@ -69,6 +69,8 @@ define([
 
                         //Create the Product Details View
                         $('#details').html(new ProductDetailsView({model: this.model.models[i]}).render().el);
+
+                        return;
                     } 
                 }                
             },
