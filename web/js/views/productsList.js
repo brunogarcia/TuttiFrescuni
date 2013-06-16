@@ -84,7 +84,7 @@ define([
                     totalVegetables = $('#vegetables > .productTotal').height();
 
                     //compare values
-                    maxProducts = (totalFruits > totalVegetables) ? totalFruits : totalVegetables;
+                    maxProducts = (totalFruits >= totalVegetables) ? totalFruits : totalVegetables;
 
                     //set product height
                     productsHeight = maxProducts + 100;
