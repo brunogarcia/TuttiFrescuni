@@ -81,24 +81,6 @@ function getSeason($season) {
 	}
 }
 
-function getMonthsAndSeasons($idProduct) {
-
-    $sql = "SELECT CodMes, CodRecogida
-            FROM temporadas
-            WHERE CodProducto = $idProduct";
-
-    try {
-        //connect, query, fetch and JSON encode
-        $db = getConnection();
-        $stmt = $db->query($sql);
-        $products = $stmt->fetchAll(PDO::FETCH_OBJ);
-        $db = null;
-        echo json_encode($products);
-    } catch(PDOException $e) {
-        echo '{"error":{"text":'. $e->getMessage() .'}}';
-    }                
-}
-
 //DB connection
 function getConnection() {
 	$dbhost="127.0.0.1";
