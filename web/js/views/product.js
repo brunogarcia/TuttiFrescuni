@@ -1,7 +1,7 @@
 // Product
 define([
     //Load with require.js:
-    'text!templates/product.html'], // Template Product
+    'hbars!templates/product'], // Template Product
     function(ProductTemplate) {
 
         var SeasonItem = Backbone.View.extend({
@@ -10,7 +10,7 @@ define([
 
             render:function () {
                 // Using Underscore we can compile our template with data model
-                var compiledTemplate = _.template(ProductTemplate, this.model.toJSON());
+                var compiledTemplate = ProductTemplate(this.model.toJSON());
 
                 // Append our compiled template to this Views "el"
                 this.$el.html(compiledTemplate);
