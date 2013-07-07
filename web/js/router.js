@@ -4,14 +4,15 @@ define([
     'collections/products',
     'views/header',
     'views/productsList',
-    'views/footer'],
-    function(ProductsCollection, HeaderView, ProductListView, FooterView) {
+    'views/footer',
+    'eventDispatcher'],
+    function(ProductsCollection, HeaderView, ProductListView, FooterView, EventDispatcher) {
 
         var AppRouter,
             app_router,
             initialize,
             self,
-            productsListView;
+            productsListView;            
     
         // Create Router
         AppRouter = Backbone.Router.extend({
@@ -30,7 +31,7 @@ define([
                 //create a new Collection
                 this.productsList = new ProductsCollection();
 
-                //alphabeticical sorting by Name Product
+                //alphabeticical sorting by name
                 this.productsList.comparator = function(product) {
                     return product.get("nameProduct");
                 }
@@ -42,15 +43,11 @@ define([
                 this.productsList.fetch({
                     success:function () {
 
-                         //create Products List View
+                         //create View
                         productsListView = new ProductListView({model: self.productsList});
 
-                        //add Products List View to #content
-                        $('#content').html(productsListView.render().el);
-
-                     if(productsListView.postRender) {
-                            productsListView.postRender();
-                        };                        
+                        //add View to #content
+                        $('#content').html(productsListView.render().el);                                              
                     }
                 });
             }
@@ -66,6 +63,11 @@ define([
                 and dispatching routes.
             */
             Backbone.history.start();
+
+            //When finished load images: create iScroll
+            EventDispatcher.on("finishedLoadImages", function() {
+                productsListView.postRender();
+            })
 
             // Remove spinner
             loading_spinner.stop();
