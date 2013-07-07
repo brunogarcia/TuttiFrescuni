@@ -1,6 +1,5 @@
 // Product Details
-define([
-    'text!templates/product-details.html'],
+define(['hbars!templates/product-details'],
     function(productDetailsTemplate) {
 
         var ProductDetails = Backbone.View.extend({
@@ -8,7 +7,7 @@ define([
             render:function () {                
                 
                 // Using Underscore we can compile our template with data model
-                var compiledTemplate = _.template(productDetailsTemplate, this.model.toJSON());
+                var compiledTemplate = productDetailsTemplate(this.model.toJSON());
 
                 // Append our compiled template to this Views "el"
                 this.$el.html(compiledTemplate);

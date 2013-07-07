@@ -2,10 +2,11 @@
 
 define([
     //Load with require.js:
-    'text!templates/products-list.html',    //Template Title 
+    'hbars!templates/products-list',    //Template Title 
     'views/product',                        //View Product
-    'views/productDetails'],                //View Product Detail 
-    function(TitlesTemplate, ProductView, ProductDetailsView) {
+    'views/productDetails',                 //View Product Detail 
+    'eventDispatcher'],                
+    function(TitlesTemplate, ProductView, ProductDetailsView, EventDispatcher) {
 
         var SeasonListView,
             productsScroll,
@@ -27,8 +28,8 @@ define([
             render:function () {
 
                 //create Titles
-                var compiledFruitsTitle = _.template(TitlesTemplate, {id: "fruits", title: "Fruits"});
-                var compiledVegetableTitle = _.template(TitlesTemplate, {id: "vegetables", title: "Vegetables"});
+                var compiledFruitsTitle = TitlesTemplate({id: "fruits", title: "Frutas"});
+                var compiledVegetableTitle = TitlesTemplate({id: "vegetables", title: "Vegetales"});
 
                 //append Titles to $el
                 $(this.el).append(compiledFruitsTitle, compiledVegetableTitle);
@@ -48,6 +49,9 @@ define([
 
 
                 }, this); //in this context
+                
+                //We've finished load all the images...
+                EventDispatcher.trigger("finishedLoadImages");
 
                 return this;
             },
@@ -59,20 +63,19 @@ define([
                 e.preventDefault();
 
                 //Save the idProduct of clicked link
-                this.idProduct = $(e.currentTarget).data("id");
+                var idProduct = $(e.currentTarget).data("id");
 
                 //Search the model
-                for (var i = 0; i < this.model.models.length; i++) {
-
+                _.each(this.model.models, function(model) {
                     //If it's been found...
-                    if (this.model.models[i].attributes.idProduct === this.idProduct.toString()) {
+                    if (model.attributes.idProduct === idProduct.toString()) {
 
                         //Create the Product Details View
-                        $('#details').html(new ProductDetailsView({model: this.model.models[i]}).render().el);
+                        $('#details').html(new ProductDetailsView({model: model}).render().el);
 
                         return;
                     } 
-                }                
+                })
             },
 
             postRender: function() {
@@ -99,7 +102,6 @@ define([
             }
 
         });
-
 
         // Our module now returns our view
         return SeasonListView;
