@@ -1,7 +1,6 @@
 //Collection Products
 
-define([
-    "../models/product"],
+define(["../models/product"],
     function(ProductModel) {
         var Products = Backbone.Collection.extend({
             model: ProductModel,
