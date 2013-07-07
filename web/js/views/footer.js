@@ -1,7 +1,8 @@
 // Footer
 define([
-    'text!templates/footer.html'],
-    function(FooterTemplate) {
+    'hbars!templates/footer',
+    'views/credits'],
+    function(FooterTemplate, CreditsView) {
 
         var FooterView = Backbone.View.extend({
 
@@ -9,7 +10,7 @@ define([
             className: "container",       
 
             events: {
-                //If more info link has been activated
+                //If show credits link has been activated
                 "click .show-credits" : "showCredits"
             },                   
 
@@ -18,13 +19,18 @@ define([
             },
 
             render:function () {
-                var footerTemplate = _.template(FooterTemplate);
+                var footerTemplate = FooterTemplate();
                 $(this.el).html(footerTemplate);
                 return this;
             },
 
             showCredits: function() {
-                
+                //create View
+                creditsView = new CreditsView();
+
+                //add View to #content
+                $('#credits').html(creditsView.render().el);    
+
             }
         });
 
