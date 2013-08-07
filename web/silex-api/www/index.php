@@ -6,7 +6,8 @@ use Silex\Application;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Silex\Provider\DoctrineServiceProvider;
 
-$app           = new Application();
+$app = new Application();
+
 $app['config'] = array(
     "month"      => date("n"),
     "lang"       => 2,
@@ -48,8 +49,7 @@ $app->get('/seasons', function () use ($app) {
           ";
 
         return $app->json(
-            $app['db']->fetchAll(
-                $sql, array(
+            $app['db']->fetchAll($sql, array(
                     'LANG'  => $app['config']['lang'],
                     'MONTH' => $app['config']['month']
                 )
@@ -82,8 +82,7 @@ $app->get('/getSeason/{season}', function ($season) use ($app) {
           ";
 
         return $app->json(
-            $app['db']->fetchAll(
-                $sql, array(
+            $app['db']->fetchAll($sql, array(
                     'LANG'   => $app['config']['lang'],
                     'SEASON' => $app['config']['seasons'][$season],
                     'MONTH'  => $app['config']['month']
