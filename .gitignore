@@ -170,3 +170,6 @@ seim/
 api/
 *.sublime-project
 *.sublime-workspace
+
+web/silex-api/vendor
+.idea

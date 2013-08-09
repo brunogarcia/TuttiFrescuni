@@ -1,0 +1,9 @@
+{
+    "require":{
+        "silex/silex": "v1.1.0",
+        "doctrine/dbal": "2.3.4"
+    },
+    "autoload": {
+        "psr-0": { "": "lib" }
+    }
+}
