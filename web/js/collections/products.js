@@ -2,9 +2,12 @@
 
 define(["../models/product"],
     function(ProductModel) {
-        var Products = Backbone.Collection.extend({
-            model: ProductModel,
-            url: "api/tutti.php/seasons/best"
+        var thisDate = new Date(),
+        	thisMonth = thisDate.getMonth(),
+        	ProductData = "/js/data/months/" + thisMonth + ".json",
+        	Products = Backbone.Collection.extend({
+            	model: ProductModel,
+            	url: ProductData
         });
 
     return Products;
