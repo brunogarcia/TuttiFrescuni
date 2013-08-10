@@ -29,27 +29,25 @@ define([
 
             loadProducts:function () {
                 //create a new Collection
-                this.productsList = new ProductsCollection();
+                var productsCollection = new ProductsCollection();
 
                 //alphabeticical sorting by name
-                this.productsList.comparator = function(product) {
+                productsCollection.comparator = function(product) {
                     return product.get("nameProduct");
-                }
-
-                //avoid losing binding
-                self = this;
+                };
 
                 //fetch data Collection
-                this.productsList.fetch({
+                productsCollection.fetch({
+
                     success:function () {
 
                          //create View
-                        productsListView = new ProductListView({model: self.productsList});
+                        productsListView = new ProductListView({collection: productsCollection});
 
                         //add View to #content
                         $('#content').html(productsListView.render().el);                                              
                     }
-                });
+                }, this);
             }
 
         });

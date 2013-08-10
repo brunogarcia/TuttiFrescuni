@@ -35,16 +35,16 @@ define([
                 $(this.el).append(compiledFruitsTitle, compiledVegetableTitle);
 
                 //for each product model
-                _.each(this.model.models, function (products) {
+                this.collection.each(function (product) {
 
                     //load category of this product
-                    this.category = {model: products.attributes.idCategory};
+                    this.category = {model: product.attributes.idCategory};
 
                     //append it on her own category's container
                     if (this.category.model === "2") {
-                        $(this.el).find("#fruits > ul").append(new ProductView({model: products}).render().el);
+                        $(this.el).find("#fruits > ul").append(new ProductView({model: product}).render().el);
                     } else {
-                        $(this.el).find("#vegetables > ul").append(new ProductView({model: products}).render().el);
+                        $(this.el).find("#vegetables > ul").append(new ProductView({model: product}).render().el);
                     }
 
 
@@ -66,7 +66,7 @@ define([
                 var idProduct = $(e.currentTarget).data("id");
 
                 //Search the model
-                _.each(this.model.models, function(model) {
+                this.collection.each(function(model) {
                     //If it's been found...
                     if (model.attributes.idProduct === idProduct.toString()) {
 

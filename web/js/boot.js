@@ -2,7 +2,7 @@
 //http://requirejs.org/docs/api.html#config
 require.config({
 
-    waitSeconds : 5,
+    waitSeconds : 1,
 
     //Path alias and routes
     paths: {
