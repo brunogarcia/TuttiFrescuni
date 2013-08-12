@@ -16,7 +16,7 @@ require.config({
         'json': 'libs/json.min',
         'bootstrapTransition': 'libs/bootstrap/bootstrap-transition.min',
         'bootstrapModal': 'libs/bootstrap/bootstrap-modal.min',  
-        'iScroll': 'libs/iscroll.min',
+        'iScroll': 'libs/iscroll.min'
     },
     //Configure the dependencies and exports for older,
     //traditional "browser globals" scripts that do not use define()
