@@ -4,14 +4,12 @@ define([
     'collections/products',
     'views/header',
     'views/productsList',
-    'views/footer',
-    'eventDispatcher'],
-    function(ProductsCollection, HeaderView, ProductListView, FooterView, EventDispatcher) {
+    'views/footer'],
+    function(ProductsCollection, HeaderView, ProductListView, FooterView) {
 
         var AppRouter,
             app_router,
             initialize,
-            self,
             productsListView;            
     
         // Create Router
@@ -30,11 +28,6 @@ define([
             loadProducts:function () {
                 //create a new Collection
                 var productsCollection = new ProductsCollection();
-
-                //alphabeticical sorting by name
-                productsCollection.comparator = function(product) {
-                    return product.get("nameProduct");
-                };
 
                 //fetch data Collection
                 productsCollection.fetch({
@@ -62,26 +55,18 @@ define([
             */
             Backbone.history.start();
 
-            //When finished load images: create iScroll
-            EventDispatcher.on("finishedLoadImages", function() {
+            //When finished load images...
+            Backbone.on("finishedLoadImages", function() {
+                // Create iScroll
                 productsListView.postRender();
-            })
-
-            // Remove spinner
-            loading_spinner.stop();
-
-            // Hide loading
-            $("#loading").hide('slow'); 
-
+            });
             
         };
 
         return {
             initialize: initialize            
         };
-
-
-
+        
     });
 
 

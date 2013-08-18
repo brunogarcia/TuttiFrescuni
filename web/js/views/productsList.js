@@ -51,7 +51,7 @@ define([
                 }, this); //in this context
                 
                 //We've finished load all the images...
-                EventDispatcher.trigger("finishedLoadImages");
+                Backbone.trigger("finishedLoadImages");
 
                 return this;
             },
@@ -99,6 +99,12 @@ define([
                     productsScroll = new iScroll('wrapper');
 
                     }, 1000);
+
+                // Remove spinner
+                loading_spinner.stop();
+
+                // Hide loading
+                $("#loading").hide('slow');
             }
 
         });

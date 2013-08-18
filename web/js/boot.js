@@ -22,7 +22,7 @@ require.config({
     //traditional "browser globals" scripts that do not use define()
     //to declare the dependencies and set a module value.
     shim: {
-        Handlebars: {exports: 'Handlebars'},
+        'Handlebars': {'exports': 'Handlebars'},
         'Backbone': ['Underscore', 'jQuery'],
         'bootstrapTransition': ['jQuery'],
         'bootstrapModal': ['jQuery'],

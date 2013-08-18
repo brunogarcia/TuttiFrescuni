@@ -7,7 +7,8 @@ define(["../models/product"],
         	ProductData = "/js/data/months/" + thisMonth + ".json",
         	Products = Backbone.Collection.extend({
             	model: ProductModel,
-            	url: ProductData
+            	url: ProductData,
+            	comparator: "nameProduct"
         });
 
     return Products;
