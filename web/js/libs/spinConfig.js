@@ -21,6 +21,7 @@ loading_opts = {
   left: 'auto' // Left position relative to parent in px
 };
 
+//Load spinner
 loading_target = document.getElementById('loading');
 loading_spinner = new Spinner(loading_opts).spin(loading_target);
 loading_target.appendChild(loading_spinner.el);
