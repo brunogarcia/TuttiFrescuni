@@ -2,11 +2,10 @@
 
 define([
     //Load with require.js:
-    'hbars!templates/products-list',    //Template Title 
-    'views/product',                        //View Product
-    'views/productDetails',                 //View Product Detail 
-    'eventDispatcher'],                
-    function(TitlesTemplate, ProductView, ProductDetailsView, EventDispatcher) {
+    'hbars!templates/products-list', 
+    'views/product',
+    'views/productDetails'],                
+    function(TitlesTemplate, ProductView, ProductDetailsView) {
 
         var SeasonListView,
             productsScroll,
