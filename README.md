@@ -1,4 +1,8 @@
 TuttiFrescuni
 =============
 
-I'm creating my own pet project
+*Enjoy the best seasonal fruit &amp; vegetables*
+
+A pet project by Bruno Garcia
+
+http://www.tuttifrescuni.com
