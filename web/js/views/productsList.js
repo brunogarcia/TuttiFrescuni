@@ -27,8 +27,8 @@ define([
             render:function () {
 
                 //create Titles
-                var compiledFruitsTitle = TitlesTemplate({id: "fruits", title: "Frutas"});
-                var compiledVegetableTitle = TitlesTemplate({id: "vegetables", title: "Vegetales"});
+                var compiledFruitsTitle = TitlesTemplate({id: "fruits", title: "Frutas"}),
+                    compiledVegetableTitle = TitlesTemplate({id: "vegetables", title: "Vegetales"});
 
                 //append Titles to $el
                 $(this.el).append(compiledFruitsTitle, compiledVegetableTitle);

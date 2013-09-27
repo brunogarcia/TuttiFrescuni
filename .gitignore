@@ -170,6 +170,7 @@ seim/
 api/
 *.sublime-project
 *.sublime-workspace
-
+todo.txt
 web/silex-api/vendor
 .idea
+*.komodoproyect

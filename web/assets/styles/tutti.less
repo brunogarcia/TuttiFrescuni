@@ -4,12 +4,11 @@
  * version 0.1
  * Colour: http://www.colourlovers.com/palette/1745515/Vegan_Songbird
  */
-
-body {
-	overflow-y: hidden;
-}
+@import "bootstrap.less";
 
 .tutti-frescuni {
+
+	overflow-y: hidden;
 
 	p, li {
 		font-family: 'Cabin', Helvetica, Arial, sans-serif;
@@ -23,8 +22,8 @@ body {
 		z-index: 9999; 
 	}
 
-	#header, 
-	#footer {
+	#header-region, 
+	#footer-region {
 		position: absolute;
 		z-index: 2;
 		width: 100%;
@@ -42,7 +41,7 @@ body {
 	}
 
 
-	#footer {
+	#footer-region {
 		bottom: 0;
 		height: 80px;
 
@@ -52,7 +51,7 @@ body {
 		}
 	}
 	
-	#header {	
+	#header-region {	
 		top: 0;
 		height: 175px;
 
@@ -68,7 +67,7 @@ body {
 		}
 	}
 
-	#wrapper {
+	#main-region {
 		position: absolute;
 		z-index: 1;
 		width: 100%;
@@ -76,7 +75,7 @@ body {
 		bottom: 80px;
 	}
 
-	.products {
+	#products {
 
 		h2 {
 			text-align: center;
@@ -92,7 +91,6 @@ body {
 				list-style-type: none;
 				text-align: center;
 				margin-bottom: 35px;
-				
 
 				a {
 					font-size: 20px;
@@ -103,10 +101,8 @@ body {
 
 						&:hover {
 							box-shadow: 4px 4px 10px rgba(100, 100, 100, 0.85);
-						};
+						}
 					}
-
-
 
 					.name { 
 						color: #333;
@@ -119,4 +115,3 @@ body {
 	}
 }
 
-@import "bootstrap.less";
