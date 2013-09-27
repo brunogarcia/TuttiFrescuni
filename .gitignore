@@ -173,3 +173,5 @@ api/
 
 web/silex-api/vendor
 .idea
+*.komodoproject
+todo.txt
