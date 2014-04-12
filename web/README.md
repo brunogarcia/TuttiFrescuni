@@ -7,19 +7,20 @@ A pet project by Bruno Garcia
 
 http://www.tuttifrescuni.com
 
-# Stack
-	* Foundation
-	* Sass
-	* Backbone
-	* Marionette
-	* Require.js
-	* Handlebars
-	* Highcharts
-	* Phonegap
+## Stack
 
-# Bug Bower-Highharts
-  https://github.com/bower/bower/issues/727
+* Foundation
+* Sass
+* Backbone
+* Marionette
+* Require.js
+* Handlebars
+* Highcharts
+* Phonegap
 
-* Launch the server with PHP or Python	
+## Bug Bower-Highharts
+	https://github.com/bower/bower/issues/727
+
+## Launch the server with PHP or Python	
 	php -S localhost:8000
 	python -m SimpleHTTPServer
