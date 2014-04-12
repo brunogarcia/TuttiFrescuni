@@ -1,5 +1,5 @@
-TuttiFrescuni
-=============
+Tutti Frescuni
+==============
 
 *Enjoy the best seasonal fruit &amp; vegetables*
 
@@ -22,4 +22,4 @@ http://www.tuttifrescuni.com
 
 * Launch the server with PHP or Python	
 	php -S localhost:8000
-	python -m SimpleHTTPServer  
+	python -m SimpleHTTPServer

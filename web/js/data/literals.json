@@ -1,0 +1,18 @@
+{
+	"AppTitle": "Tutti Frescuni",
+	"MenuTitle": "Menu",
+	"MenuItems": [
+		{
+			"name": "Filtro 1",
+			"url": "filter1"
+		}, 		
+		{
+			"name": "Filtro 2",
+			"url": "filter2"
+		},
+		{
+			"name": "Créditos",
+			"url": "credits"
+		} 
+	]
+}

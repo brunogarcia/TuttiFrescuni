@@ -1,0 +1,16 @@
+{
+  "name": "stack-simple-app",
+  "version": "0.0.1",
+  "dependencies": {
+    "foundation": "~5.0.2",
+    "backbone": "~1.1.2",
+    "marionette": "~1.7.4",
+    "handlebars": "~1.3.0",
+    "requirejs": "~2.1.11",
+    "requirejs-text": "git://github.com/requirejs/text.git",
+    "require-handlebars": "git://github.com/jfparadis/requirejs-handlebars.git",
+    "highcharts": "git://github.com/highslide-software/highcharts-release.git"
+  },
+  "devDependencies": {}
+}
+

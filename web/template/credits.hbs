@@ -1,0 +1,47 @@
+<!-- Credits Details -->
+<div id="credits-details-modal-id" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3 id="myModalLabel">Créditos</h3>
+  </div>
+  <div class="modal-body">
+
+    <h4>Desarrollo</h4>
+  	
+    <p><a href="http://bruno.garciaechegaray.com" target="_blank">Bruno Garcia</a>. <br>
+      Esta idea ha sido desarrollada como proyecto de fin de curso para el <a href="http://www.todofp.es/todofp/formacion/que-y-como-estudiar/oferta-formativa/familias/informatica-comunicaciones/desarrollo-aplicaciones-multiplataforma.html" target="_blank">FP Desarrollo de Aplicaciones Multiplataforma</a>. 
+
+    <ul>
+      <li>Puedes ver la <a href="http://www.tuttifrescuni.com/seim/" target="_blank">presentanción del proyecto</a>.</li>
+      <li>Navegar por el <a href="https://github.com/brunogarcia/TuttiFrescuni" target="_blank">código de la aplicación</a>.</li>
+      <li>Leer un <a href="http://brunogarciaechegaray.tumblr.com/post/54837485049/pet-project-la-mejor-forma-de-aprender">artículo</a>
+          donde detallo la concepción de la idea y la tecnología utilizada.</li>
+    </ul>
+
+    <h4>Diseño gráfico</h4>
+    <p>El logotipo, el favicon y el fabuloso nombre han sido creados por la ilustradora <a href="http://evasantos.tumblr.com/" target="_blank">Eva Santos</a>.</p>
+
+    <h4>API</h4>
+    <p><a href="http://gonzalo123.com/">Gonzalo Ayuso</a> la ha mejorado la API original. Ha refactorizado e implementado Silex y Doctrine.</p>
+
+    <h4>Datos</h4>
+    <p>Gran parte de los datos han sido recopilados de la campaña <a href="http://www.alimentacion.es/es/campanas/frutas/frutas_verduras_temporada/" target="_blank"><em>Frutas y verduras de temporada</em></a> del <a href="http://www.magrama.gob.es/" target="_blank">Ministerio de Agricultura, Alimentación y Medio Ambiente</a></p>
+
+    <h4>Fotografías:</h4>
+    <p>Hemos utilizado fotografías copyleft recopiladas con la <a href="http://www.flickr.com/services/api/" target="_blank">API de Flickr</a>. Gracias a cada una de las personas que han compartido estas imágenes con la comunidad:</p>
+    {{#list people}}
+      {{nameProduct}}: <a href="http://www.flickr.com/photos/{{flickrUser}}/{{flickrPhoto}}" target="_blank">{{flickrUser}}</a>
+    {{/list}}
+
+    <h4>Versión</h4>
+    <p>Beta 0.2</p>
+    <ul>
+	<li>Actualiza toda la estructura MVC con la librería Marionette.js</li>
+    </ul>
+    <p>Beta 0.1</p>
+    <ul>
+	<li>Estructura MVC desarrollada con la librería Backbone.js</li>
+    </ul>
+  </div>
+</div>
+
